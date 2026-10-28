@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f5fa;
+    color: #243447;
+}
+
+header {
+    background: #087eaf;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+h2 {
+    color: #087eaf;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 15px;
+    background: white;
+}
+
+button {
+    padding: 12px;
+    background: #087eaf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #05658d;
+}
+
+#message {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+th, td {
+    border: 1px solid #dbe3eb;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #087eaf;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f3f8fc;
+}
+
+.cancel-btn {
+    background: #dc3545;
+    padding: 7px 10px;
+    font-size: 13px;
+    margin: 0;
+}
+
+.cancel-btn:hover {
+    background: #b02a37;
+}
+
+#emptyMessage {
+    color: #64748b;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #dcecf5;
+    color: #334155;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .container {
+        padding: 16px;
+    }
+}
