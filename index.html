@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outpatient Appointment Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Outpatient Appointment Planner</h1>
+        <p>Book and manage your hospital appointments</p>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Book an Appointment</h2>
+
+            <form id="appointmentForm">
+                <label for="patientName">Patient Name</label>
+                <input type="text" id="patientName"
+                       placeholder="Enter patient name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone"
+                       placeholder="Enter 10-digit phone number"
+                       pattern="[0-9]{10}" maxlength="10" required>
+
+                <label for="doctor">Select Doctor</label>
+                <select id="doctor" required>
+                    <option value="">Choose a doctor</option>
+                    <option>General Physician</option>
+                    <option>Cardiologist</option>
+                    <option>Dermatologist</option>
+                    <option>Orthopedic</option>
+                    <option>Pediatrician</option>
+                </select>
+
+                <label for="date">Appointment Date</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Appointment Time</label>
+                <select id="time" required>
+                    <option value="">Choose a time</option>
+                    <option>09:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>02:00 PM</option>
+                    <option>03:00 PM</option>
+                    <option>04:00 PM</option>
+                </select>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+            <p id="message" role="status"></p>
+        </section>
+
+        <section class="container">
+            <h2>Appointment List</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient</th>
+                            <th>Doctor</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="appointmentList"></tbody>
+                </table>
+            </div>
+            <p id="emptyMessage">No appointments booked yet.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Outpatient Appointment Planner | Mini Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
